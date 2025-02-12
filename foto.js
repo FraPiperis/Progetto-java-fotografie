@@ -19,10 +19,10 @@ function Visualizza(immagini) {
 
     immagini.photos.forEach(photo => {
         const Card = document.createElement("div")
-        Card.classList.add("Card", "col-6", "col-md-4")
+        Card.classList.add("card", "d-flex", "flex-row", "cols-1", "cols-md-2", "g-4")
 
         const image = document.createElement("img")
-        Card.classList.add("Card-img")
+        Card.classList.add("card-img-top")
         image.src = photo.src.medium
 
         Card.appendChild(image); 
